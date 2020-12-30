@@ -37,3 +37,6 @@ RUN chmod +x cleanup_cache.py cli-sync.sh globus_folder_sync.py share-data.sh sh
 RUN virtualenv venv
 RUN . venv/bin/activate
 RUN pip install -r requirements.txt
+
+RUN apt-get install bsdmainutils
+
